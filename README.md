@@ -1,5 +1,7 @@
 # Southampton study flashcards
 
+[Download the Anki deck (out.apkg)](https://github.com/gSUz92nc/cards/raw/refs/heads/main/out.apkg)
+
 PLEASE READ EVERYTHING HERE AND REACH OUT IF YOU DON'T UNDERSTAND
 
 My uni flashcards in anki format, if you use something else im sure you can swap them for something else but everything is pretty reliant on anki. Also think anki is the best flashcard app.
