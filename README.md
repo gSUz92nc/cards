@@ -20,7 +20,7 @@ You can skip this if you know how to use anki. If you don't have anki install it
 
 ![Anki with the Onigiri add-on installed](images/onigiri.png)
 
-Next we need to import the deck which you have hopefully downloaded (its the out.apkg in this repo). At the top of anki hit File then Import (or Ctrl-Shift-I) then select the out.apkg and then import. In the import options leave everything on default then click import in the top right.
+Next we need to import the deck which you have hopefully downloaded (its the out.apkg in this repo). At the top of anki hit File then Import (or Ctrl-Shift-I) then select the out.apkg and then import. When updating, keep **Import learning progress** and **Import deck presets** off to preserve your scheduling and deck settings. Choose to update existing note content if you want the revised questions and answers; then import.
 
 ![Anki import options](images/import%20options.png)
 
@@ -60,13 +60,19 @@ Click on the tag you want to shedule/unschedule. That will open all the cards on
 
 If you ever want them to start being scheduled again its the same concept just unsuspend them.
 
-## Deleting cards
+## Deleting retired cards
 
-You probably never want to delete cards. Reason being the flashcards are constantly getting updated meaning you have to keep re-importing them every so often. If you delete the card everytime the cards are re-imported you end up adding back the card you deleted. Instead suspend the card which ends up having the same effect as deleting it.
+Importing an updated deck adds or updates notes, but **does not delete cards removed from the download**. For cards permanently retired from these decks:
+
+1. Import the latest `out.apkg`, with learning-progress and deck-preset import off.
+2. Open [the deletion search string](retired-card-search.txt), copy the entire line, and paste it into the search bar in Anki's **Browse** window.
+3. Check the results, select all matching notes, then choose **Notes → Delete**. This permanently removes the selected notes and their cards; the retained notes keep their progress.
+
+The search uses exact card IDs and includes all previous retirements. Already deleted or never imported notes will not appear, so fewer results are normal. The current download excludes these cards; importing an old download could bring them back. For an active card you personally do not want to study, use **Suspend** instead so future imports do not restore it to your reviews.
 
 ##  Updates
 
-Flashcards are updated roughly once a week. If you want the best flashcards reimport the new out.apkg every so often. Your progress is saved as long as you don't change any settings while importing.
+Flashcards are updated roughly once a week. If you want the best flashcards reimport the new out.apkg every so often. Keep learning-progress and deck-preset import off. Content updates preserve the existing note identities; use the deletion search above to remove retired notes separately.
 
 ## Sources
 
