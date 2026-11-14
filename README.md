@@ -65,8 +65,8 @@ If you ever want them to start being scheduled again its the same concept just u
 Importing an updated deck adds or updates notes, but **does not delete cards removed from the download**. For cards permanently retired from these decks:
 
 1. Import the latest `out.apkg`, with learning-progress and deck-preset import off.
-2. Open [the deletion search string](retired-card-search.txt), copy the entire line, and paste it into the search bar in Anki's **Browse** window.
-3. Check the results, select all matching notes, then choose **Notes → Delete**. This permanently removes the selected notes and their cards; the retained notes keep their progress.
+2. Open [the deletion search string](retired-card-search.txt), copy one full line, and paste it into the search bar in Anki's **Browse** window.
+3. Check the results, select all matching notes, then choose **Notes → Delete**. This permanently removes the selected notes and their cards. Repeat for each line in the file.
 
 The search uses exact card IDs and includes all previous retirements. Already deleted or never imported notes will not appear, so fewer results are normal. The current download excludes these cards; importing an old download could bring them back. For an active card you personally do not want to study, use **Suspend** instead so future imports do not restore it to your reviews.
 
